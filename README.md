@@ -3,7 +3,7 @@
   README — Gem’s Wig Supply (PHP Shopping Cart)
 🛍 Overview
 
-This project is a simple online store web application built with PHP, MySQL, HTML, CSS, and JavaScript.
+This project is a simple online store web application built with PHP, MySQL, HTML, and CSS.
 
 Users can:
 
@@ -26,41 +26,8 @@ Install and start XAMPP / WAMP / MAMP
 
 Place all project files into the htdocs (XAMPP) or www (WAMP) directory inside a folder like gemswig.
 
-Visit http://localhost/gemswig/catalog.php
+Visit http://localhost/project2.0/Views/index.php
 
-🧠 How It Works
-
-When a user clicks Add or Remove:
-
-A JavaScript fetch() call sends product_id, qty, and action to cart.php
-
-cart.php updates $_SESSION['cart']
-
-It returns the new total and item quantity as JSON
-
-The page instantly updates the cart badge and the row’s “In Cart” cell — no page reload
-
-On the checkout page:
-
-It queries the DB for all items in the cart
-
-Shows each item with ProductID, Name, Qty, Unit Cost, Line Total
-
-Calculates:
-
-Subtotal = sum of line totals
-
-Tax = 5% of subtotal
-
-Shipping = 10% of subtotal
-
-Grand total = subtotal + tax + shipping
-
-“Check Out” clears $_SESSION['cart'] and redirects back to catalog
-
-📌 Features
-
-Real-time badge updates using AJAX
 
 Session-based cart persistence
 
@@ -88,12 +55,3 @@ Totals table
 
 Continue shopping / Checkout buttons
 
-✅ To-Do / Possible Improvements
-
-User login system and order history
-
-Stock inventory quantity control
-
-Styling enhancements / responsive design
-
-Database-based order records
